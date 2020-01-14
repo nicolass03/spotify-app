@@ -1,0 +1,8 @@
+<div class="row ml-5">
+    <div class="col">
+        <input type="text" (keyup)="buscarArtista(inputSearch.value)" class="form-control animated fadeIn" placeholder="Buscar artista" #inputSearch>
+    </div>
+</div>
+<app-loading *ngIf="loading"></app-loading>
+<hr class="ml-5">
+<app-cards [items]="artists"></app-cards>
